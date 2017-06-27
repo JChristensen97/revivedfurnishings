@@ -1,0 +1,141 @@
+.location-info {
+	display: flex;
+	justify-content: space-around;
+	border-left: 7px solid $colour-light;
+	border-bottom: 7px solid $colour-light;
+	margin-top: 40px;
+	.fa {
+	
+		font-size: 24px;
+		color: $colour-dark;
+	}
+}
+
+.location-info p {
+	margin-bottom: 15px;
+}
+
+.book h2 {
+	margin-top: 50px;
+}
+
+//form styles
+
+form {
+
+	input,
+	textarea {
+	padding: 14px;
+	margin-top: 10px;
+}
+}
+
+
+div.wpcf7 {
+	margin-top: 25px;
+}
+
+.wpcf7 textarea {
+	width: 90%;
+	border-radius: 5px;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="date" i],
+.wpcf7 input[type="submit" i] {
+	width: 40%;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+.wpcf7 input[type="submit" i] {
+	font-size: $small-font;
+	width: 20%;
+	background-color: white;
+}
+
+/* Contact Page - Google Map styles */
+
+.acf-map {
+  width: 100%;
+  height: 500px;
+  border: none;
+  margin: 20px 0;
+}
+
+/* fixes potential theme css conflict */
+.acf-map img {
+  max-width: inherit !important; }
+
+/*# sourceMappingURL=style.css.map */
+
+
+//media queries 
+
+@media only screen and (max-width: 800px) {
+
+.location-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.info-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact-icons {
+	//text-align: center;
+}
+
+.location-info p {
+	text-align: center;
+}
+
+.wpcf7 textarea {
+
+}
+
+.wpcf7 input[type="text"], .wpcf7 input[type="email"], .wpcf7 input[type="date"] {
+	width: 100%;
+}
+
+.wpcf7 input[type="submit" i] {
+	width: 100%;
+	padding: 10px;
+}
+
+.acf-map {
+	height: 400px;
+}
+
+form input {
+	width: 100%;
+	padding: 14px 0px;
+}
+
+.wpcf7 textarea {
+	width: 100%;
+	padding: 14px 0px;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+.location-info p {
+	//margin-bottom: 4px;
+}
+
+.wpcf7 input[type="submit" i] {
+	//width: 100%;
+	padding: 5px;
+}
+
+.acf-map {
+	height: 250px;
+}
+
+}

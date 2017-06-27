@@ -1,0 +1,111 @@
+.isotope-navigation {
+	margin-top: 1rem;
+}
+
+.button {
+	border: 2px solid $colour-links;
+	padding: 5px;
+	display: inline-block;
+    font-size: $small-font;
+	box-sizing: border-box;
+	background-color: white;
+	cursor: pointer;
+
+	&:focus, &:hover, &:active {
+		background-color: $colour-links;
+		color: $colour-footer;
+		transition: .5s ease;
+
+	}
+}
+
+.checked {
+	background-color: $colour-links;
+	color: $colour-footer;
+}
+
+.ui-group {
+	margin-bottom: 10px;
+}
+
+.item {
+	width: 300px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	background-color: $colour-footer;
+
+	&:hover .overlay {
+		opacity: 0.7;
+	}
+
+	img {
+		width: 300px;
+		display: block;
+	}
+
+	a {
+		&:hover{
+			border-bottom: none;
+		}
+	}
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $colour-dark;
+}
+
+.viewproduct {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.productInfo {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 300px;
+}
+
+.furniture_title {
+	padding-left: 5px;
+}
+
+.furniture_price {
+	padding-right: 5px;
+}
+
+#isotope-container {
+	margin: 3rem auto 0;
+}
+
+@media only screen and (max-width: 525px) {
+   	.button {
+   		margin-top: 5px;
+   	}
+}
+
+@media only screen and (max-width: 330px) {
+   	.item {
+   		width: 270px;
+   		img {
+   			width: 270px;
+   		}
+   	}
+
+   	.productInfo {
+   		width: 270px;
+   	}
+}

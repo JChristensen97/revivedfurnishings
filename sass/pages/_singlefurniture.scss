@@ -1,0 +1,89 @@
+h1 {
+    font-size: $large-font;
+}
+header h1 {
+    margin-top: 0px;
+}
+.site-content {
+    margin-left: $main-side-margins;
+    margin-right: $main-side-margins;
+    margin-top: $main-top-margins;
+    margin-bottom: $main-bottom-margins;
+    font-family: $font;
+    line-height: $line-height
+}
+//dont mess with main!
+main {
+    margin: 0;
+}
+.entry-header {
+    display: flex;
+    
+    @media only screen and (max-width: 730px) {
+        flex-direction: column-reverse;
+    }
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    @media only screen and (max-width: 730px) {
+        width: 100%;
+    }
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 143px;
+    position: fixed;
+    margin-left: 4.5%;
+    width: 41%;
+    @media only screen and (max-width: 730px) {
+        position: static;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+.right-side-to-static {
+    position: static !important;
+    //margin-top: 115%;
+    //width: 45%;
+    /*@media only screen and (max-width: 1370px) {
+        margin-top: 100%;
+    }
+    
+    @media only screen and (max-width: 1140px) {
+        margin-top: 75%;
+    }
+    @media only screen and (max-width: 890px) {
+        margin-top: 50%;
+    }
+    @media only screen and (max-width: 820px) {
+        margin-top: 40%;
+    }
+    @media only screen and (max-width: 730px) {
+        display: none;
+    }*/
+}
+.right-side h1, .right-side p {
+    padding-bottom: 20px;
+}
+.before {
+    /*@media only screen and (max-width: 830px) {
+        display: none;
+    }*/
+}
+.beforeimage {
+    width: 40%;
+}
+ul {
+    list-style-type: none
+}
+.slides {
+    padding: 0px;
+}
+img {
+    width: 100%;
+    height: auto;
+}

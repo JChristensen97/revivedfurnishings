@@ -1,0 +1,64 @@
+/*!
+Theme Name: Revived Furnishings
+Theme URI: http://underscores.me/
+Author: John, Johnna, Ricky, Serena
+Author URI: http://underscores.me/
+Description: custom theme for Revived Furnishings business
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: revivedfurnishings
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Revived Furnishings is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+//only import pages to style.scss
+//variables->template->page->style.scss
+
+@import 'variables-site/variables';
+@import 'templates/general';
+@import 'templates/slider';
+@import 'templates/swipebox';
+@import 'templates/header';
+@import 'templates/footer';
+@import 'pages/home';
+@import 'pages/furniture';
+@import 'pages/artwork';
+@import 'pages/services';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/singlefurniture';
+
+
+

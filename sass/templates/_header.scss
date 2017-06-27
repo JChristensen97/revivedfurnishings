@@ -1,0 +1,125 @@
+.main-navigation {
+box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 9999;
+background-color: white;
+height: 70px;
+
+
+a {
+	line-height: 70px;
+}
+
+.logo {
+	width: 90%;
+	margin-top: 3px;
+	
+}
+
+li:first-child a:hover {
+	border-bottom: none;
+}
+
+ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+}
+
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+	display: none;
+}
+
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: white;
+	border: 1px solid $colour-links;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px $colour-links;
+	clip: auto !important;
+	color: $colour-links;
+	display: block;
+	font-size: 14px;
+	font-weight: normal;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar */
+}
+
+.mobile-logo {
+	display: none;
+}
+
+
+@media screen and (max-width: 800px) {
+
+	.menu-toggle {
+		margin-top: 15px;
+		margin-right: 5%;
+		float: right;
+		display: block;
+		border: 2px solid $colour-links;
+		background-color: white;
+		padding: 10px;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: $colour-links;
+			color: white;
+
+		}
+	}
+
+	.nav-menu li:first-child {
+		display: none;
+	}
+ 
+	#primary-menu {
+	display: none;
+	}
+
+	.toggled #primary-menu {
+	display: flex;
+	}
+
+	.main-navigation ul {
+		align-items: center;
+		flex-direction: column;
+		background-color: white;
+		width: 100%;
+		box-shadow: 0 0px 0px rgba(0,0,0,0), 0 1px 2px rgba(0,0,0,0.24);
+		li {
+		//text-align: center;
+		}
+	}
+
+	.mobile-logo {
+		width: 150px;
+		height: auto;
+		display: inline-block;
+		margin-left: 5%;
+		margin-top: 5px;
+	}
+	
+}
+

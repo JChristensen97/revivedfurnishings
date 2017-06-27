@@ -1,0 +1,134 @@
+.featured-section h1 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 18px;
+}
+.featured-products {
+    display: flex;
+    justify-content: space-around;
+    img {
+        width: 300px;
+        height: 300px;
+        display: block;
+    }
+}
+.single-feature {
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: $colour-footer;
+    width: 300px;
+    &:hover .overlay {
+        opacity: 0.7;
+    };
+    a {
+        &:hover{
+            border-bottom: none;
+        }
+    }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $colour-dark;
+}
+.viewproduct {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.featured-info {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 300px;
+}
+.featured-title {
+    padding-left: 5px;
+}
+.featured-price {
+    padding-right: 5px;
+}
+.about h2, .promotion h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+.about p,
+.promotion p {
+    margin-bottom: 50px;
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.promotion {
+    width: 70%;
+    margin: 0 auto;
+}
+.promotion p {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-left: 7px solid $colour-light;
+    border-bottom: 7px solid $colour-light;
+    padding: 20px;
+}
+//media queries
+@media only screen and (max-width: 1010px) {
+.promotion {
+    width: 90%;
+}
+.featured-products img {
+    width: 250px;
+    height: 250px;
+}
+.single-feature, .featured-info {
+  width: 250px;
+}
+}
+@media only screen and (max-width: 900px) {
+.promotion {
+    width: 100%;
+}
+.featured-products img {
+    width: 220px;
+    height: 220px;
+}
+.single-feature, .featured-info {
+  width: 220px;
+}
+}
+@media only screen and (max-width: 750px) {
+.featured-products {
+    flex-direction: column;
+    align-items: center;
+}
+.featured-products img {
+    height: auto;
+    width: 100%;
+}
+.single-feature {
+    width: 75%;
+}
+.featured-info {
+  width: 100%;
+}
+}
+
+
+
+
+
+
+
+
+
